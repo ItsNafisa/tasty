@@ -14,7 +14,8 @@ let servicesection=document.querySelector('.service .container .main-head');
 let imgone=document.querySelector('.service .container .one .imgs img');
 let imgtwo=document.querySelector('.service .container .two .imgs img');
 window.addEventListener('scroll',()=>{
-    if(window.scrollY >= (servicesection.offsetTop-300)){
+    // if(window.scrollY >= (servicesection.offsetTop-300)){
+      if(window.scrollY >= (servicesection.offsetTop - 50)){
         imgone.classList.add('anime');
         imgtwo.classList.add('anime2');
     }

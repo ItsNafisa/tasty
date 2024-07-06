@@ -619,6 +619,7 @@ color: #777;
 /* end dish */
 /* start dish media query */
 @media (max-width:790px) {
+
 .dish .container .dishs{
   flex-direction: column;
 }
@@ -628,8 +629,19 @@ color: #777;
 .dish .container .dishs .right{
   width: 100%;
 }
+.dishs .card h5{
+  font-size: 14px;
+}
+.dishs .card .mnueMarketBtn{
+  height: 20px;
+  width: 20px;
+}
+.dishs .card{
+  margin-bottom: 29px;
+}
 }
 @media (max-width:400px) {
+
   .dishs .card .content p{
     font-size: 13px;
     line-height: 1.5;
@@ -638,13 +650,35 @@ color: #777;
     font-size: 15px;
       }
       .dishs .card{
-        margin-bottom: 24px;
+        margin-bottom: 29px;
+      }
+      .dishs .card h5{
+        font-size: 14px;
+      }
+      .dishs .card .mnueMarketBtn{
+        height: 20px;
+        width: 20px;
       }
 }
 @media (width:1024px) {
+
   .dishs .card .mnueMarketBtn{
     position: absolute;
     bottom: -10px;
+    right: 0;
+    height: 23px;
+    width: 23px;
+    background-color: #bc8c4c;
+    padding: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+}
+@media (min-width:992px) and (max-width:1400px) {
+
+  .dishs .card .mnueMarketBtn{
+    position: absolute;
+    bottom: -13px;
     right: 0;
     height: 23px;
     width: 23px;
@@ -668,11 +702,14 @@ color: #777;
   .team .container .teams{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(330px,1fr)); */
+    grid-template-columns: repeat(auto-fit,minmax(303px,1fr));
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
   }
   .team .container .teams .card{
-    margin-right: 15px;
-  margin-bottom: 22px;
+    /* margin-right: 15px;
+  margin-bottom: 22px; */
   }
   .team .container .teams .card img{
     width: 200px;
@@ -732,17 +769,23 @@ padding-bottom: 50px;
 .special .container{
   margin-left: auto;
   margin-right: auto;
+  /* background-color: red; */
 }
 .special .container .cards{
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  /* grid-template-columns: repeat(auto-fill,minmax(330px,1fr)); */
+   grid-template-columns: repeat(auto-fit,minmax(303px,1fr));
+  /* width: calc(100% - 100px); */
+  /* background-color: green; */
+ grid-row-gap: 50px;
+ grid-column-gap: 50px;
 }
 .special .container .cards .card{
 border: 2px solid #f2f2f2;
-margin-right: 25px;
+/* margin-right: 25px; */
 position: relative;
-margin-bottom: 30px;
+/* margin-bottom: 30px; */
 }
 .special .container .cards .card img{
 width: 200px;
@@ -839,18 +882,25 @@ padding-right: 14px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
+   
   }
   .desert .container .cards{
     margin-top: 35px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(330px,1fr)); */
+      grid-template-columns: repeat(auto-fit,minmax(303px,1fr));
+      grid-row-gap: 50px;
+      grid-column-gap: 50px;
+    /* background-color: red; */
+  
   }
   .desert .container .cards .card{
-    margin-right: 20px;
-    margin-bottom: 20px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
     height: 400px;
     position: relative;
     transition: all 2s;
+   /* padding-right: 20px; */
   }
   .desert .container .cards .card .content{
     position: absolute;
@@ -858,6 +908,7 @@ padding-right: 14px;
     background-color: #bc8c4c91;
     padding-top: 10px;
     transition: all 2s;
+    /* padding-right: 20px; */
   }
   .desert .container .cards .card .im{
   width: 100%;
@@ -1368,19 +1419,21 @@ footer .parttwo p{
     }
 
     @media (min-width:768px) {
-
+    
         .container{
           /* width: 750px; */
             width: 730px;
               } 
             }
             @media (min-width:992px) {
+            
                 .container{
                     width: 970px;
                   } 
                 
                 }
                 @media (min-width:1200px) {
+                
                   .container{
                         width: 1170px;
                       }  
